@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="icon" type="image/x-icon" href="youtube.svg">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css" integrity="sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://kit.fontawesome.com/f5dbe9fbb8.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <div class="main-container">
+        <div class="question-container flex justify-content-around  ">
+            <div class="quiz-heading m-4 ">
+                <h1 class="text-center ">Quiz App</h1>
+                <div class="question-details  flex justify-between ">
+                    <div class="question-number">
+                        <p id="que-no" class="ml-2 question-no">Question </p>
+
+                    </div>
+                    <div class="quiz-score">
+                        <p id="score-display" class="mr-6">Score: 0</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="questions-problem ml-4 mr-4">
+
+                <div class="flex justify-center align-center ">
+                    <h1 id="total-score-display"></h1>
+                </div>
+                <div class="question-tittle">
+                    <h1 id="questions"></h1>
+                </div>
+
+                <div id="answer-buttons" class=" answer-button-class flex flex-column ">
+                    <button class="answer-btn answer-1 option-1 option-hover text-start" type="button" onclick="selectOption('Option 1')">2</button>
+
+                    <button class="answer-btn answer-2 option-2 option-hover text-start" type="button" onclick="selectOption('Option 2')">5</button>
+
+
+                    <button class="answer-btn answer-3 option-3 option-hover text-start " type="button" onclick="selectOption('Option 3')">6</button>
+
+                    <button class="answer-btn answer-4 option-4 option-hover text-start" type="button" onclick="selectOption('Option 4')">4</button>
+                </div>
+
+
+            </div>
+
+            <div class="button-center">
+                <button id="next-button">Start Quiz</button>
+            </div>
+
+        </div>
+
+
+
+</body>
+<script src="script.js">
+</script>
+
+</html>
