@@ -260,6 +260,9 @@ function showScore() {
     score_last_display.innerHTML = `Your Score: ${score}/${questions.length*5}`;
     next_buttons.innerHTML = "play again"
     next_buttons.style.display = "block"
+    next_buttons.addEventListener("click", () => {
+        window.location.reload()
+    })
 
 }
 
